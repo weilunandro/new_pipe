@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -17,7 +18,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController()
+        
+        let rootContorller = UINavigationController()
+        window.rootViewController = rootContorller
+        
+        let mainController = UITabBarController()
+        rootContorller.addChild(mainController)
+        
+        let controller1 = UIViewController()
+        controller1.view.backgroundColor = UIColor.red
+        controller1.tabBarItem.title = "热门"
+        
+
+        let controller2 = UIViewController()
+        controller2.view.backgroundColor = UIColor.yellow
+        controller2.tabBarItem.title = "趋势"
+        
+        mainController.setViewControllers([controller1, controller2], animated: true)
+        
+        
         self.window = window
         window.makeKeyAndVisible()
     }
