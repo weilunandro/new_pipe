@@ -21,10 +21,14 @@ class HomeViewController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         RxAlamofire.request(.get, "https://www.youtube.com/results?search_query=test&pbj=1")
-        .responseString()
+            .responseString()
             .debug()
             .observeOn(MainScheduler.instance)
-            .subscribe { print($0) }
+            .subscribe(onNext: { (response, data) in
+                print(data)
+            }, onError: { error in
+                print(error)
+            })
     }
     
     
