@@ -1,32 +1,38 @@
 PODS:
-  - CocoaLumberjack (3.6.1):
-    - CocoaLumberjack/Core (= 3.6.1)
-  - CocoaLumberjack/Core (3.6.1)
-  - SVGKit (2.1.0):
-    - CocoaLumberjack (~> 3.0)
+  - Alamofire (5.2.0)
+  - RxAlamofire (5.2.0):
+    - RxAlamofire/Core (= 5.2.0)
+  - RxAlamofire/Core (5.2.0):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
-  - CocoaLumberjack
-  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `3.x`)
+  - Alamofire (~> 5.2)
+  - RxAlamofire
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
-    - CocoaLumberjack
-
-EXTERNAL SOURCES:
-  SVGKit:
-    :branch: 3.x
-    :git: https://github.com/SVGKit/SVGKit.git
-
-CHECKOUT OPTIONS:
-  SVGKit:
-    :commit: d9432035c6e2587358a0b838d00c2658ce16e7a2
-    :git: https://github.com/SVGKit/SVGKit.git
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
-  SVGKit: c6fe3403caafbd20d4ad5a5cc7dcae6115b3c6e1
+  Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
+  RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 2301c19ad0cc0fbdca19747a70c36e118e68949a
+PODFILE CHECKSUM: 9c056f7bd13bcce6aafc2c7e94bcda4a44ee5b0f
 
 COCOAPODS: 1.9.1

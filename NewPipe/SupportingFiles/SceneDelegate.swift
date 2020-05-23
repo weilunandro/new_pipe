@@ -25,14 +25,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let mainController = UITabBarController()
         rootContorller.addChild(mainController)
         
-        let controller1 = UIViewController()
+        let controller1 = HomeViewController()
         controller1.view.backgroundColor = UIColor.red
         controller1.tabBarItem.title = "热门"
+        controller1.tabBarItem.image = UIImage(named: "ic_tab_home")
         
-
+    
         let controller2 = UIViewController()
         controller2.view.backgroundColor = UIColor.yellow
         controller2.tabBarItem.title = "趋势"
+        
+        
         
         mainController.setViewControllers([controller1, controller2], animated: true)
         
