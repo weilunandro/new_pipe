@@ -99,13 +99,9 @@
 		E6CB9C982478A43200E26B64 /* NewPipe */ = {
 			isa = PBXGroup;
 			children = (
-				E6CB9C992478A43200E26B64 /* AppDelegate.swift */,
-				E6CB9C9B2478A43200E26B64 /* SceneDelegate.swift */,
+				E6CB9CCA2478A56800E26B64 /* SupportingFiles */,
+				E6CB9CC92478A4DB00E26B64 /* Main */,
 				E6CB9C9D2478A43200E26B64 /* ViewController.swift */,
-				E6CB9C9F2478A43200E26B64 /* Main.storyboard */,
-				E6CB9CA22478A43300E26B64 /* Assets.xcassets */,
-				E6CB9CA42478A43300E26B64 /* LaunchScreen.storyboard */,
-				E6CB9CA72478A43300E26B64 /* Info.plist */,
 			);
 			path = NewPipe;
 			sourceTree = "<group>";
@@ -126,6 +122,26 @@
 				E6CB9CBD2478A43300E26B64 /* Info.plist */,
 			);
 			path = NewPipeUITests;
+			sourceTree = "<group>";
+		};
+		E6CB9CC92478A4DB00E26B64 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E6CB9CCA2478A56800E26B64 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E6CB9C9F2478A43200E26B64 /* Main.storyboard */,
+				E6CB9CA22478A43300E26B64 /* Assets.xcassets */,
+				E6CB9CA42478A43300E26B64 /* LaunchScreen.storyboard */,
+				E6CB9CA72478A43300E26B64 /* Info.plist */,
+				E6CB9C992478A43200E26B64 /* AppDelegate.swift */,
+				E6CB9C9B2478A43200E26B64 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewPipe/Info.plist;
+				INFOPLIST_FILE = NewPipe/SupportingFiles/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewPipe/Info.plist;
+				INFOPLIST_FILE = NewPipe/SupportingFiles/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
