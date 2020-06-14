@@ -19,7 +19,7 @@ enum ItemInfoType: String, CustomStringConvertible{
     case COMMENT = "comment"
 }
 
-class ItemInfo: CustomStringConvertible{
+class InfoItem: CustomStringConvertible{
 
     let itemInfoType: ItemInfoType
     let url: String

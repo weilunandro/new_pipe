@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StreamInfoItem: ItemInfo{
+class StreamInfoItem: InfoItem{
         
     var uploaderName: String? = nil
     
